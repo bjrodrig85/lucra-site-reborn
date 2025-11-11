@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "Quando vou receber o livro físico?",
-    answer: "O prazo de entrega varia de acordo com sua região, mas geralmente é entre 7 a 15 dias úteis após a confirmação do pagamento. Você receberá um código de rastreamento para acompanhar sua encomenda."
+    question: "Por quanto tempo terei acesso ao treinamento em vídeo aulas?",
+    answer: "Você terá acesso ao treinamento por 12 meses. Nesse período pode assistir os vídeos quantas vezes desejar."
   },
   {
-    question: "Como acesso os bônus digitais?",
-    answer: "Assim que seu pagamento for confirmado, você receberá um email com todos os acessos aos bônus digitais: livro em PDF, audiobook e treinamento em vídeo. O acesso é imediato!"
+    question: "Vou receber alguma coisa em casa?",
+    answer: "Sim! Nós vamos mandar o livro físico MANUAL DA CLÍNICA LUCRATIVA para sua casa com frete grátis."
   },
   {
-    question: "O frete realmente é grátis?",
-    answer: "Sim! O frete é completamente grátis para todo o Brasil. Você paga apenas os R$ 57 e não tem nenhum custo adicional."
+    question: "Terei suporte?",
+    answer: "Sim! Você terá suporte às dúvidas colocando seus comentários logo abaixo das aulas. Eu mesmo leio e respondo todas as dúvidas."
   },
   {
-    question: "Existe garantia?",
-    answer: "Sim! Você tem 7 dias para avaliar todo o material. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu dinheiro."
+    question: "O frete é Grátis para quem mora fora do Brasil?",
+    answer: "Não. A Promoção de frete grátis é somente para o Brasil. Não fazemos envios para o exterior nessa promoção. Caso more no exterior, entre em contato conosco. Calcularemos o frete internacional."
   },
   {
-    question: "Para quem é este livro?",
-    answer: "Este livro é para proprietários de clínicas, profissionais da saúde que desejam ter sua própria clínica, ou quem já tem uma clínica mas quer otimizar processos e aumentar a lucratividade."
+    question: "Como funciona a garantia?",
+    answer: "São 7 dias de garantia depois que você receber o livro ou o seu dinheiro de volta. Se você não gostar do material, você tem 7 dias para pedir seu dinheiro de volta. DETALHE: Você nem precisa devolver o livro. Fique com ele!"
   }
 ];
 

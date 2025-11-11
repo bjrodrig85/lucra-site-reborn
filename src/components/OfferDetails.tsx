@@ -1,24 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
-
-const benefits = [
-  {
-    title: "Livro Físico com Frete Grátis",
-    description: "Receba o livro impresso na sua casa sem pagar nada pelo frete. Material de alta qualidade."
-  },
-  {
-    title: "Livro Digital em PDF",
-    description: "Acesso imediato ao livro digital. O mesmo livro que custa R$ 24,90 na Amazon."
-  },
-  {
-    title: "Audiobook Completo",
-    description: "Ouça o livro completo onde estiver. Perfeito para aproveitar o tempo no trânsito."
-  },
-  {
-    title: "Treinamento em Vídeo Exclusivo",
-    description: "Vídeo aulas inéditas gravadas exclusivamente para os leitores do livro."
-  }
-];
 
 export const OfferDetails = () => {
   return (
@@ -28,33 +8,9 @@ export const OfferDetails = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Uma Oferta <span className="text-gradient">Incontestável</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Veja tudo que você recebe ao garantir seu exemplar hoje
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
-          {benefits.map((benefit, index) => (
-            <Card 
-              key={index}
-              className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
-            >
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <CheckCircle2 className="w-6 h-6 text-primary" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
-
-        <Card className="p-8 md:p-12 bg-gradient-to-br from-card to-muted/20 border-primary/20">
+        <Card className="p-8 md:p-12 bg-gradient-to-br from-card to-muted/20 border-primary/20 mb-12">
           <div className="prose prose-invert max-w-none">
             <p className="text-lg leading-relaxed mb-4">
               Caro Leitor, estimada leitora;
@@ -65,11 +21,67 @@ export const OfferDetails = () => {
             <p className="text-lg leading-relaxed mb-4">
               Acabamos de disponibilizar a versão física do livro <strong className="text-primary">MANUAL DA CLÍNICA LUCRATIVA</strong>.
             </p>
-            <p className="text-lg leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-6">
               E gostaria de te convidar para ter acesso ao que eu chamo de <strong className="text-primary">"Oferta Incontestável"</strong>.
             </p>
-            <p className="text-lg leading-relaxed">
-              Você vai ter acesso a tudo isso por apenas <span className="text-3xl font-bold text-secondary">R$ 57</span>
+            
+            <div className="space-y-4 mb-6">
+              <p className="text-lg"><strong>A questão é simples:</strong></p>
+              
+              <p className="text-lg"><strong>1 –</strong> Eu vou mandar o livro físico Manual da Clínica Lucrativa com frete grátis para sua casa.</p>
+              
+              <p className="text-lg"><strong>2 –</strong> Além do livro, <em>imediatamente você vai ter acesso ao <strong>Livro Digital em pdf.</strong></em></p>
+              
+              <p className="text-base text-muted-foreground">Só o Livro Digital custa R$ 24,90 na Amazon e é um dos únicos da sua categoria por lá (pode consultar e ver o preço por lá).</p>
+              
+              <p className="text-lg"><strong>3 –</strong> Além do Livro Digital, você vai ter acesso imediato ao <strong>Audiobook do livro</strong> (amantes de audiobooks digam "oi")</p>
+              
+              <p className="text-lg"><strong>4 –</strong> Além do Audiobook eu vou liberar como bônus um <strong>treinamento em vídeo aulas inédito e exclusivo</strong> que eu gravei exclusivamente para meus leitores;</p>
+              
+              <p className="text-lg"><strong>5 –</strong> Você vai ter acesso a tudo isso por apenas <span className="text-4xl font-bold text-secondary">R$ 57</span></p>
+            </div>
+
+            <div className="bg-muted/30 rounded-lg p-6 mt-8">
+              <h3 className="text-2xl font-bold mb-4">Resumo:</h3>
+              <p className="text-lg mb-4">Você pode adquirir só o Livro Digital (versão kindle) na Amazon por R$ 24,90 ou…</p>
+              <p className="text-lg mb-3">Pode receber:</p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span><strong>Livro Físico</strong> com Frete Grátis (na sua casa)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span><strong>Livro Digital</strong> (em PDF)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span><strong>Audiobook</strong> do Livro (em mp3)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span><strong>Treinamentos Exclusivos</strong> em vídeo aulas</span>
+                </li>
+              </ul>
+              <p className="text-2xl font-bold">Tudo isso por <span className="text-secondary">apenas R$ 57</span></p>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-8 md:p-12 bg-card border-border">
+          <h3 className="text-3xl font-bold mb-6 text-center">Sua Garantia Incontestável</h3>
+          <div className="prose prose-invert max-w-none">
+            <p className="text-lg leading-relaxed mb-4">
+              São 7 dias de garantia <strong>depois que você receber o livro</strong> ou o seu dinheiro de volta…
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              Se você não gostar do Livro Físico + Livro Digital + Audiobook + Treinamento…
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              Você tem 7 dias para pedir seu dinheiro de volta.
+            </p>
+            <p className="text-xl font-bold text-primary">
+              DETALHE: Você nem precisa devolver o livro. Fique com Ele!
             </p>
           </div>
         </Card>
